@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathGame.Maui.editPage"
+             Title="Upravujes Uzivatele: ">
+    <VerticalStackLayout
+        VerticalOptions="Center">
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <VerticalStackLayout VerticalOptions="Center">
+        <Entry x:Name="cilso" TextChanged="cilso_TextChanged" MinimumWidthRequest="200">
+            
+            
+        </Entry>
+
+                <Button Text="Upravit" Clicked="Button_Clicked" MinimumWidthRequest="200">
+            
+            
+        </Button>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

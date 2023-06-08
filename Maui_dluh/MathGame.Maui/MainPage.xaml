@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathGame.Maui.MainPage">
+
+        <Grid RowDefinitions=".3*,.1*,.5*,.1*">
+            <Label Grid.Row="0"
+                   Margin="0,30,0,0"
+                   HorizontalTextAlignment="Start"
+                Text= "Tady vidíš kolik ti kdo dluží"
+                FontSize="32"
+                HorizontalOptions="Center"/>
+            
+            <Label Grid.Row="1"
+                Text= ""
+                FontSize="32"
+                x:Name="Debug"
+                HorizontalOptions="Center"/>
+
+            <VerticalStackLayout  Grid.Row="2"
+                HorizontalOptions="Center">
+                <Entry x:Name="vstup"
+                       Placeholder="Jméno dlužníka"
+                       PlaceholderColor="AliceBlue"
+                       BackgroundColor="Green"
+                       MinimumWidthRequest="200"></Entry>
+                <Entry x:Name="vstupScore"
+                       Placeholder="Dluh"
+                       PlaceholderColor="AliceBlue"
+                       BackgroundColor="Green"
+                       MinimumWidthRequest="200"></Entry>
+
+                <Button Grid.Column="0"
+                        Text="Přidat"
+                        Clicked="pridat"/>
+            </VerticalStackLayout>
+
+                <Button Grid.Row ="3"
+                        Grid.ColumnSpan="4"
+                        BackgroundColor="ForestGreen"
+                        Text="Zobrazit dlužníky"
+                        Clicked="OnViewPreviousGamesChosen"/>
+            
+        </Grid>
+
+</ContentPage>
